@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="590" viewBox="0 0 1800 590">
+<rect x="0" y="0" width="1800" height="590" fill="#ffffff"/>
+<rect x="0.0" y="0.0" width="1800.0" height="104.0" rx="18" ry="18" fill="#eef1fc" stroke="#7e89fd" stroke-width="2.5"/>
+<circle cx="66.0" cy="52.0" r="36.0" fill="#ffffff" stroke="#7e89fd" stroke-width="2.5"/>
+<g transform="translate(43.0,29.0) scale(0.9583)"><path fill="#42A5F5" d="M39,45H9c0,0-3-0.1-3-8h36C42,44.9,39,45,39,45z"/>
+    <rect x="8" y="3" fill="#90CAF9" width="32" height="34"/>
+    <g fill="#1976D2">
+        <rect x="18" y="15" width="16" height="2"/>
+        <rect x="18" y="19" width="16" height="2"/>
+        <rect x="18" y="23" width="16" height="2"/>
+        <rect x="18" y="27" width="16" height="2"/>
+        <rect x="18" y="31" width="16" height="2"/>
+    </g>
+    <g fill="#1976D2">
+        <rect x="14" y="15" width="2" height="2"/>
+        <rect x="14" y="19" width="2" height="2"/>
+        <rect x="14" y="23" width="2" height="2"/>
+        <rect x="14" y="27" width="2" height="2"/>
+        <rect x="14" y="31" width="2" height="2"/>
+    </g></g>
+<text x="120.0" y="46.0" font-family="Pretendard" font-size="28" font-weight="800" fill="#3043a1" text-anchor="start">SKILL.md 규칙</text>
+<text x="120.0" y="80.0" font-family="Pretendard" font-size="22" font-weight="500" fill="#3043a1" text-anchor="start">Claude가 말투, 문장부호, 표, 캡션, 그림 규칙을 먼저 읽고 Word와 한글(HWP) 문서 모두에 적용</text>
+<polyline points="150.0,106.0 150.0,150.0" fill="none" stroke="#7e89fd" stroke-width="2.2" stroke-linejoin="round"/>
+<polygon points="150.0,150.0 141.2,134.0 158.8,134.0" fill="#7e89fd"/>
+<polyline points="450.0,106.0 450.0,150.0" fill="none" stroke="#7e89fd" stroke-width="2.2" stroke-linejoin="round"/>
+<polygon points="450.0,150.0 441.2,134.0 458.8,134.0" fill="#7e89fd"/>
+<polyline points="750.0,106.0 750.0,150.0" fill="none" stroke="#7e89fd" stroke-width="2.2" stroke-linejoin="round"/>
+<polygon points="750.0,150.0 741.2,134.0 758.8,134.0" fill="#7e89fd"/>
+<polyline points="1050.0,106.0 1050.0,150.0" fill="none" stroke="#7e89fd" stroke-width="2.2" stroke-linejoin="round"/>
+<polygon points="1050.0,150.0 1041.2,134.0 1058.8,134.0" fill="#7e89fd"/>
+<polyline points="1350.0,106.0 1350.0,150.0" fill="none" stroke="#7e89fd" stroke-width="2.2" stroke-linejoin="round"/>
+<polygon points="1350.0,150.0 1341.2,134.0 1358.8,134.0" fill="#7e89fd"/>
+<polyline points="1650.0,106.0 1650.0,150.0" fill="none" stroke="#7e89fd" stroke-width="2.2" stroke-linejoin="round"/>
+<polygon points="1650.0,150.0 1641.2,134.0 1658.8,134.0" fill="#7e89fd"/>
+<polyline points="150.0,210.0 1650.0,210.0" fill="none" stroke="#d5dbf6" stroke-width="12" stroke-linejoin="round"/>
+<polygon points="312.0,210.0 292.0,198.0 292.0,222.0" fill="#7e89fd"/>
+<polygon points="612.0,210.0 592.0,198.0 592.0,222.0" fill="#7e89fd"/>
+<polygon points="912.0,210.0 892.0,198.0 892.0,222.0" fill="#7e89fd"/>
+<polygon points="1212.0,210.0 1192.0,198.0 1192.0,222.0" fill="#7e89fd"/>
+<polygon points="1512.0,210.0 1492.0,198.0 1492.0,222.0" fill="#7e89fd"/>
+<circle cx="150.0" cy="210.0" r="56.0" fill="#ffffff" stroke="#d0d4dc" stroke-width="2.5"/>
+<g transform="translate(116.0,176.0) scale(1.4167)"><path fill="#E65100" d="M41,42H13c-2.2,0-4-1.8-4-4V18c0-2.2,1.8-4,4-4h28c2.2,0,4,1.8,4,4v20C45,40.2,43.2,42,41,42z"/>
+    <path fill="#F57C00" d="M35,36H7c-2.2,0-4-1.8-4-4V12c0-2.2,1.8-4,4-4h28c2.2,0,4,1.8,4,4v20C39,34.2,37.2,36,35,36z"/>
+    <circle fill="#FFF9C4" cx="30" cy="16" r="3"/>
+    <polygon fill="#942A09" points="17,17.9 8,31 26,31"/>
+    <polygon fill="#BF360C" points="28,23.5 22,31 34,31"/></g>
+<circle cx="108.0" cy="168.0" r="15.0" fill="#3f58d4"/>
+<text x="108.0" y="175.0" font-family="Pretendard" font-size="19" font-weight="800" fill="#ffffff" text-anchor="middle">1</text>
+<text x="150.0" y="310.0" font-family="Pretendard" font-size="28" font-weight="800" fill="#111111" text-anchor="middle">아이콘 고르기</text>
+<text x="150.0" y="342.0" font-family="Consolas, 'D2Coding', monospace" font-size="21" font-weight="600" fill="#3f58d4" text-anchor="middle">fetch_icons8.py</text>
+<text x="150.0" y="380.0" font-family="Pretendard" font-size="22" font-weight="400" fill="#333333" text-anchor="middle">무료 아이콘 329개 중</text>
+<text x="150.0" y="408.0" font-family="Pretendard" font-size="22" font-weight="400" fill="#333333" text-anchor="middle">후보 시트로 고르기</text>
+<rect x="23.0" y="432.0" width="254.0" height="52.0" rx="12" ry="12" fill="#ffffff" stroke="#111111" stroke-width="2.5"/>
+<g transform="translate(36.0,443.0) scale(0.6250)"><polygon fill="#90CAF9" points="40,45 8,45 8,3 30,3 40,13"/>
+    <polygon fill="#E1F5FE" points="38.5,14 29,14 29,4.5"/></g>
+<text x="162.0" y="466.0" font-family="Consolas, 'D2Coding', monospace" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">_sheet.png</text>
+<circle cx="450.0" cy="210.0" r="56.0" fill="#ffffff" stroke="#d0d4dc" stroke-width="2.5"/>
+<g transform="translate(416.0,176.0) scale(1.4167)"><polygon fill="#CFD8DC" points="35,36 39,36 39,22 26,22 26,13 22,13 22,22 9,22 9,36 13,36 13,26 22,26 22,36 26,36 26,26 35,26"/>
+    <rect x="17" y="6" fill="#3F51B5" width="14" height="10"/>
+    <rect x="32" y="32" fill="#00BCD4" width="10" height="10"/>
+    <rect x="6" y="32" fill="#00BCD4" width="10" height="10"/>
+    <rect x="19" y="32" fill="#00BCD4" width="10" height="10"/></g>
+<circle cx="408.0" cy="168.0" r="15.0" fill="#3f58d4"/>
+<text x="408.0" y="175.0" font-family="Pretendard" font-size="19" font-weight="800" fill="#ffffff" text-anchor="middle">2</text>
+<text x="450.0" y="310.0" font-family="Pretendard" font-size="28" font-weight="800" fill="#111111" text-anchor="middle">그림 그리기</text>
+<text x="450.0" y="342.0" font-family="Consolas, 'D2Coding', monospace" font-size="21" font-weight="600" fill="#3f58d4" text-anchor="middle">svgdiagram.py</text>
+<text x="450.0" y="380.0" font-family="Pretendard" font-size="22" font-weight="400" fill="#333333" text-anchor="middle">계층 칸, 아이콘 노드,</text>
+<text x="450.0" y="408.0" font-family="Pretendard" font-size="22" font-weight="400" fill="#333333" text-anchor="middle">라벨 화살표 배치</text>
+<rect x="323.0" y="432.0" width="254.0" height="52.0" rx="12" ry="12" fill="#ffffff" stroke="#111111" stroke-width="2.5"/>
+<g transform="translate(336.0,443.0) scale(0.6250)"><polygon fill="#90CAF9" points="40,45 8,45 8,3 30,3 40,13"/>
+    <polygon fill="#E1F5FE" points="38.5,14 29,14 29,4.5"/></g>
+<text x="462.0" y="466.0" font-family="Consolas, 'D2Coding', monospace" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">figure.svg</text>
+<circle cx="750.0" cy="210.0" r="56.0" fill="#ffffff" stroke="#d0d4dc" stroke-width="2.5"/>
+<g transform="translate(716.0,176.0) scale(1.4167)"><g fill="#37474F">
+        <circle cx="33" cy="16" r="6"/>
+        <circle cx="15" cy="16" r="6"/>
+        <path d="M46.7,25l-15.3,3H16.7L1.4,25l4.3-7.9c1.1-1.9,3.1-3.1,5.3-3.1h26.2c2.2,0,4.2,1.2,5.3,3.1L46.7,25z"/>
+        <circle cx="38" cy="30" r="10"/>
+        <circle cx="10" cy="30" r="10"/>
+        <circle cx="24" cy="28" r="5"/>
+    </g>
+    <circle fill="#546E7A" cx="24" cy="28" r="2"/>
+    <g fill="#a0f">
+        <circle cx="38" cy="30" r="7"/>
+        <circle cx="10" cy="30" r="7"/>
+    </g>
+    <g fill="#CE93D8">
+        <path d="M41.7,27.7c-1-1.1-2.3-1.7-3.7-1.7s-2.8,0.6-3.7,1.7c-0.4,0.4-0.3,1,0.1,1.4c0.4,0.4,1,0.3,1.4-0.1 c1.2-1.3,3.3-1.3,4.5,0c0.2,0.2,0.5,0.3,0.7,0.3c0.2,0,0.5-0.1,0.7-0.3C42.1,28.7,42.1,28.1,41.7,27.7z"/>
+        <path d="M10,26c-1.4,0-2.8,0.6-3.7,1.7c-0.4,0.4-0.3,1,0.1,1.4c0.4,0.4,1,0.3,1.4-0.1c1.2-1.3,3.3-1.3,4.5,0 c0.2,0.2,0.5,0.3,0.7,0.3c0.2,0,0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0.1-1.4C12.8,26.6,11.4,26,10,26z"/>
+    </g></g>
+<circle cx="708.0" cy="168.0" r="15.0" fill="#3f58d4"/>
+<text x="708.0" y="175.0" font-family="Pretendard" font-size="19" font-weight="800" fill="#ffffff" text-anchor="middle">3</text>
+<text x="750.0" y="310.0" font-family="Pretendard" font-size="28" font-weight="800" fill="#111111" text-anchor="middle">PNG로 확인</text>
+<text x="750.0" y="342.0" font-family="Consolas, 'D2Coding', monospace" font-size="21" font-weight="600" fill="#3f58d4" text-anchor="middle">svg_to_png.py</text>
+<text x="750.0" y="380.0" font-family="Pretendard" font-size="22" font-weight="400" fill="#333333" text-anchor="middle">Claude가 직접 보고</text>
+<text x="750.0" y="408.0" font-family="Pretendard" font-size="22" font-weight="400" fill="#333333" text-anchor="middle">겹침과 잘림 찾기</text>
+<rect x="623.0" y="432.0" width="254.0" height="52.0" rx="12" ry="12" fill="#ffffff" stroke="#111111" stroke-width="2.5"/>
+<g transform="translate(636.0,443.0) scale(0.6250)"><polygon fill="#90CAF9" points="40,45 8,45 8,3 30,3 40,13"/>
+    <polygon fill="#E1F5FE" points="38.5,14 29,14 29,4.5"/></g>
+<text x="762.0" y="466.0" font-family="Consolas, 'D2Coding', monospace" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">figure.png</text>
+<circle cx="1050.0" cy="210.0" r="56.0" fill="#ffffff" stroke="#d0d4dc" stroke-width="2.5"/>
+<g transform="translate(1016.0,176.0) scale(1.4167)"><polygon fill="#90CAF9" points="40,45 8,45 8,3 30,3 40,13"/>
+    <polygon fill="#E1F5FE" points="38.5,14 29,14 29,4.5"/>
+    <g fill="#1976D2">
+        <rect x="16" y="21" width="17" height="2"/>
+        <rect x="16" y="25" width="13" height="2"/>
+        <rect x="16" y="29" width="17" height="2"/>
+        <rect x="16" y="33" width="13" height="2"/>
+    </g></g>
+<circle cx="1008.0" cy="168.0" r="15.0" fill="#3f58d4"/>
+<text x="1008.0" y="175.0" font-family="Pretendard" font-size="19" font-weight="800" fill="#ffffff" text-anchor="middle">4</text>
+<text x="1050.0" y="310.0" font-family="Pretendard" font-size="28" font-weight="800" fill="#111111" text-anchor="middle">Word 만들기</text>
+<text x="1050.0" y="342.0" font-family="Consolas, 'D2Coding', monospace" font-size="21" font-weight="600" fill="#3f58d4" text-anchor="middle">docx_helpers.py</text>
+<text x="1050.0" y="380.0" font-family="Pretendard" font-size="22" font-weight="400" fill="#333333" text-anchor="middle">스타일, 표, 글머리표,</text>
+<text x="1050.0" y="408.0" font-family="Pretendard" font-size="22" font-weight="400" fill="#333333" text-anchor="middle">캡션 필드, SVG 그림</text>
+<rect x="923.0" y="432.0" width="254.0" height="52.0" rx="12" ry="12" fill="#ffffff" stroke="#111111" stroke-width="2.5"/>
+<g transform="translate(936.0,443.0) scale(0.6250)"><polygon fill="#90CAF9" points="40,45 8,45 8,3 30,3 40,13"/>
+    <polygon fill="#E1F5FE" points="38.5,14 29,14 29,4.5"/></g>
+<text x="1062.0" y="466.0" font-family="Consolas, 'D2Coding', monospace" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">proposal.docx</text>
+<circle cx="1350.0" cy="210.0" r="56.0" fill="#ffffff" stroke="#d0d4dc" stroke-width="2.5"/>
+<g transform="translate(1316.0,176.0) scale(1.4167)"><rect x="9" y="11" fill="#424242" width="30" height="3"/>
+    <path fill="#616161" d="M4,25h40v-7c0-2.2-1.8-4-4-4H8c-2.2,0-4,1.8-4,4V25z"/>
+    <path fill="#424242" d="M8,36h32c2.2,0,4-1.8,4-4v-8H4v8C4,34.2,5.8,36,8,36z"/>
+    <circle fill="#00E676" cx="40" cy="18" r="1"/>
+    <rect x="11" y="4" fill="#90CAF9" width="26" height="10"/>
+    <path fill="#242424" d="M37.5,31h-27C9.7,31,9,30.3,9,29.5v0c0-0.8,0.7-1.5,1.5-1.5h27c0.8,0,1.5,0.7,1.5,1.5v0 C39,30.3,38.3,31,37.5,31z"/>
+    <rect x="11" y="31" fill="#90CAF9" width="26" height="11"/>
+    <rect x="11" y="29" fill="#42A5F5" width="26" height="2"/>
+    <g fill="#1976D2">
+        <rect x="16" y="33" width="17" height="2"/>
+        <rect x="16" y="37" width="13" height="2"/>
+    </g></g>
+<circle cx="1308.0" cy="168.0" r="15.0" fill="#3f58d4"/>
+<text x="1308.0" y="175.0" font-family="Pretendard" font-size="19" font-weight="800" fill="#ffffff" text-anchor="middle">5</text>
+<text x="1350.0" y="310.0" font-family="Pretendard" font-size="28" font-weight="800" fill="#111111" text-anchor="middle">내보내기</text>
+<text x="1350.0" y="342.0" font-family="Consolas, 'D2Coding', monospace" font-size="21" font-weight="600" fill="#3f58d4" text-anchor="middle">word_to_pdf.py</text>
+<text x="1350.0" y="380.0" font-family="Pretendard" font-size="22" font-weight="400" fill="#333333" text-anchor="middle">hwp_convert.py로</text>
+<text x="1350.0" y="408.0" font-family="Pretendard" font-size="22" font-weight="400" fill="#333333" text-anchor="middle">HWP, HWPX, PDF</text>
+<rect x="1223.0" y="432.0" width="254.0" height="52.0" rx="12" ry="12" fill="#ffffff" stroke="#111111" stroke-width="2.5"/>
+<g transform="translate(1236.0,443.0) scale(0.6250)"><polygon fill="#90CAF9" points="40,45 8,45 8,3 30,3 40,13"/>
+    <polygon fill="#E1F5FE" points="38.5,14 29,14 29,4.5"/></g>
+<text x="1362.0" y="466.0" font-family="Consolas, 'D2Coding', monospace" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">.pdf  .hwp</text>
+<circle cx="1650.0" cy="210.0" r="56.0" fill="#ffffff" stroke="#d0d4dc" stroke-width="2.5"/>
+<g transform="translate(1616.0,176.0) scale(1.4167)"><rect x="16.7" y="1.6" transform="matrix(-.707 -.707 .707 -.707 24 57.941)" fill="#FFA000" width="14.6" height="44.8"/>
+    <g fill="#9E6400">
+        <rect x="17.9" y="20.2" transform="matrix(-.707 -.707 .707 -.707 21.177 51.125)" width="6.6" height="2"/>
+        <rect x="22.3" y="15.2" transform="matrix(-.707 -.707 .707 -.707 29.833 44.71)" width="3.7" height="2"/>
+        <rect x="25.9" y="12.2" transform="matrix(-.707 -.707 .707 -.707 40.49 43.125)" width="6.6" height="2"/>
+        <rect x="31.2" y="6.3" transform="matrix(.707 -.707 .707 .707 3.643 25.147)" width="2" height="3.7"/>
+        <rect x="6.3" y="31.2" transform="matrix(-.707 -.707 .707 -.707 -8.794 60.71)" width="3.7" height="2"/>
+        <rect x="9.9" y="28.2" transform="matrix(-.707 -.707 .707 -.707 1.863 59.125)" width="6.6" height="2"/>
+        <rect x="14.3" y="23.2" transform="matrix(-.707 -.707 .707 -.707 10.52 52.71)" width="3.7" height="2"/>
+    </g></g>
+<circle cx="1608.0" cy="168.0" r="15.0" fill="#3f58d4"/>
+<text x="1608.0" y="175.0" font-family="Pretendard" font-size="19" font-weight="800" fill="#ffffff" text-anchor="middle">6</text>
+<text x="1650.0" y="310.0" font-family="Pretendard" font-size="28" font-weight="800" fill="#111111" text-anchor="middle">점검</text>
+<text x="1650.0" y="342.0" font-family="Consolas, 'D2Coding', monospace" font-size="21" font-weight="600" fill="#3f58d4" text-anchor="middle">pdf_check.py</text>
+<text x="1650.0" y="380.0" font-family="Pretendard" font-size="22" font-weight="400" fill="#333333" text-anchor="middle">lint_ko.py로 말투,</text>
+<text x="1650.0" y="408.0" font-family="Pretendard" font-size="22" font-weight="400" fill="#333333" text-anchor="middle">문장부호, 캡션까지</text>
+<rect x="1523.0" y="432.0" width="254.0" height="52.0" rx="12" ry="12" fill="#ffffff" stroke="#111111" stroke-width="2.5"/>
+<g transform="translate(1536.0,443.0) scale(0.6250)"><polygon fill="#90CAF9" points="40,45 8,45 8,3 30,3 40,13"/>
+    <polygon fill="#E1F5FE" points="38.5,14 29,14 29,4.5"/></g>
+<text x="1662.0" y="466.0" font-family="Pretendard" font-size="22" font-weight="700" fill="#111111" text-anchor="middle">점검 결과</text>
+<polyline points="750.0,488.0 750.0,548.0 450.0,548.0 450.0,490.0" fill="none" stroke="#8a90a0" stroke-width="2.6" stroke-linejoin="round"/>
+<polygon points="450.0,490.0 458.8,506.0 441.2,506.0" fill="#8a90a0"/>
+<rect x="475.4" y="526.0" width="249.2" height="42.0" rx="21" ry="21" fill="#ffffff" stroke="#dde1e8" stroke-width="1.8"/>
+<g transform="translate(487.4,535.0) scale(0.5000)"><g fill="#00BCD4">
+        <polygon points="43,18 29,6.3 29,29.7"/>
+        <path d="M20,14h12v8H20c-2.8,0-5,2.2-5,5s2.2,5,5,5h3v8h-3c-7.2,0-13-5.8-13-13S12.8,14,20,14z"/>
+    </g></g>
+<text x="612.0" y="555.0" font-family="Pretendard" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">겹침, 잘림 고치기</text>
+<polyline points="1650.0,488.0 1650.0,548.0 1050.0,548.0 1050.0,490.0" fill="none" stroke="#8a90a0" stroke-width="2.6" stroke-linejoin="round"/>
+<polygon points="1050.0,490.0 1058.8,506.0 1041.2,506.0" fill="#8a90a0"/>
+<rect x="1140.3" y="526.0" width="419.5" height="42.0" rx="21" ry="21" fill="#ffffff" stroke="#dde1e8" stroke-width="1.8"/>
+<g transform="translate(1152.3,535.0) scale(0.5000)"><g fill="#00BCD4">
+        <polygon points="43,18 29,6.3 29,29.7"/>
+        <path d="M20,14h12v8H20c-2.8,0-5,2.2-5,5s2.2,5,5,5h3v8h-3c-7.2,0-13-5.8-13-13S12.8,14,20,14z"/>
+    </g></g>
+<text x="1362.0" y="555.0" font-family="Pretendard" font-size="21" font-weight="700" fill="#111111" text-anchor="middle">쪽이 넘치면 줄일 곳을 정하고 다시</text>
+</svg>

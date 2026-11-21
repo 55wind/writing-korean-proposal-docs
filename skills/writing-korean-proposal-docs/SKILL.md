@@ -1,13 +1,13 @@
 ---
 name: writing-korean-proposal-docs
-description: Use when making or editing a Korean submission document (공모전 기획안, 제안서, 사업계획서, 데이터 활용 명세서 등) in Word or PDF, especially when it needs tables, a system architecture figure (아키텍처), or a service flow figure (서비스 흐름), or when the user asks for 표, 그림, 아키텍처, 글머리표, 들여쓰기, 말투 fixes in such a document.
+description: Use when making or editing a Korean submission document (공모전 기획안, 제안서, 사업계획서, 데이터 활용 명세서 등) in Word, Hangul (HWP, HWPX) or PDF, including filling a given 한글 양식, especially when it needs tables, a system architecture figure (아키텍처), or a service flow figure (서비스 흐름), or when the user asks for 표, 그림, 아키텍처, 글머리표, 들여쓰기, 말투, 문장부호 fixes or a rule check in such a document.
 ---
 
 # 한국어 제출 문서 (표, 아키텍처, 서비스 흐름)
 
 ## Overview
 
-공모전 기획안, 제안서, 사업계획서 같은 한국어 제출 문서를 Word로 만들 때 지키는 규칙 모음이다. 실제 제출 문서를 고치면서 받은 지적을 모았다. 처음부터 이대로 만들면 같은 지적을 다시 받지 않는다.
+공모전 기획안, 제안서, 사업계획서 같은 한국어 제출 문서를 Word나 한글(HWP)로 만들 때 지키는 규칙 모음이다. 실제 제출 문서를 고치면서 받은 지적을 모았다. 처음부터 이대로 만들면 같은 지적을 다시 받지 않는다.
 
 **도형과 글자만으로 그린 그림, 이모지, 사진은 쓰지 않는다. 그림의 구성 요소는 무료 컬러 아이콘이다.** 가장 자주 어기는 규칙이다.
 
@@ -15,7 +15,7 @@ description: Use when making or editing a Korean submission document (공모전 
 
 | 항목 | 규칙 |
 |---|---|
-| 형식 | Word(.docx)가 원본이다. PDF는 Word에서 내보낸다 (`scripts/word_to_pdf.py`). HTML로 만들어 PDF로 찍지 않는다. |
+| 형식 | 기관이 한글 양식을 주면 한글 문서가 원본이고, 아니면 Word(.docx)가 원본이다. PDF는 Word나 한글에서 내보낸다 (`scripts/word_to_pdf.py`, `scripts/hwp_convert.py`). HTML로 만들어 PDF로 찍지 않는다. 한글은 아래 '한글(HWP) 문서'를 본다. |
 | 말투 | 모든 문장은 '~음, ~함, ~임'으로 끝낸다. 따옴표로 따온 화면 문구와 사람 말은 그대로 둔다. |
 | 문장부호 | 엠대시(—)와 가운데점(·)을 쓰지 않는다. 나열은 쉼표, '와/과', '및'으로 쓴다. 제목도 마찬가지다 ("AI 및 데이터 활용 계획"). |
 | 번호 | 번호 상자, 원문자(①②)를 쓰지 않는다. 장과 절 번호(1., 2.1)만 글자로 쓴다. |
@@ -66,6 +66,17 @@ description: Use when making or editing a Korean submission document (공모전 
 - 글자는 25px(약 7pt) 이상으로 한다.
 - 그림은 SVG로 Word에 넣는다. PDF에서도 벡터로 남는다.
 
+## 한글(HWP) 문서
+
+위 규칙은 한글 문서에도 그대로 적용한다. 한글에서만 생기는 일과 자세한 방법은 `reference/hwp.md`를 읽는다.
+
+- **양식을 채우거나 기존 한글 문서를 고칠 때**: `hwp_convert.py`로 .hwp를 .hwpx로 바꾸고, XML을 고치거나 `hwpx_replace.py`로 글자를 바꾼 뒤 다시 .hwp로 바꾼다. 원본은 덮어쓰지 않는다.
+- **형식이 자유인데 한글 파일로 내야 할 때**: Word로 만든 뒤 `hwp_convert.py 문서.docx 문서.hwp`로 바꾸고, `reference/hwp.md`의 '바꿀 때 확인할 것'을 확인한다.
+- **규칙 검사**: `lint_ko.py`는 .hwp, .hwpx를 한글 없이 바로 읽어 문장부호, 특수 공백, 말투, 캡션 형식을 검사한다.
+- 양식이 정한 글꼴, 크기, 줄 간격, 표 칸이 이 문서의 기본값보다 먼저다.
+- 그림은 PNG로 넣는다 (`svg_to_png.py --width 3600`). 작은 표는 '글자처럼 취급'으로 두어 캡션과 함께 움직이게 한다.
+- 한글 자동화는 사용자의 한글 창에 문서가 열려 있으면 멈출 수 있다. 사용자의 한글을 강제로 끄지 말고 문서를 닫아 달라고 한다.
+
 ## 만드는 순서
 
 1. 아이콘 고르기: `python scripts/fetch_icons8.py --list`로 이름을 확인하고, `python scripts/fetch_icons8.py <폴더> name...`으로 받는다. `_sheet.png`를 열어 보고 고른다.
@@ -73,7 +84,8 @@ description: Use when making or editing a Korean submission document (공모전 
 3. PNG로 확인하기: `python scripts/svg_to_png.py fig.svg`로 만든 PNG를 Read로 직접 보고 겹침과 잘림을 고친다.
 4. 문서 만들기: `scripts/docx_helpers.py`를 쓴다. 표는 `table`, `cell(valign='center')`, `fill`, 그림은 `picture_svg`, 캡션은 `caption(doc, '그림' 또는 '표', 제목)`, 목록은 numPr 글머리표다. 완성 예시는 `examples/example_build_docx.py`에 있다.
 5. PDF 내보내기: `python scripts/word_to_pdf.py doc.docx --embed-fonts --pages 10` (Windows와 Microsoft Word 필요)
-6. 점검하기: `python scripts/pdf_check.py doc.pdf`로 쪽수, 남은 여백, 글꼴을 확인한다.
+6. 점검하기: `python scripts/pdf_check.py doc.pdf`로 쪽수, 남은 여백, 글꼴을 확인하고, `python scripts/lint_ko.py doc.docx`(또는 .hwp, .hwpx, .pdf)로 문장부호, 말투, 캡션 형식을 검사한다.
+7. 한글 파일로 낼 때: `python scripts/hwp_convert.py doc.docx doc.hwp` 뒤 `reference/hwp.md`대로 확인한다.
 
 ## Common Mistakes
 
@@ -89,3 +101,6 @@ description: Use when making or editing a Korean submission document (공모전 
 | 캡션 번호가 틀리거나 비어 있음 | SEQ 필드가 갱신되지 않았음. `word_to_pdf.py`가 내보내기 전에 필드를 갱신한다. Word에서는 Ctrl+A, F9. |
 | 캡션을 더했더니 쪽이 넘침 | 캡션 한 줄은 약 5mm다. 표가 많은 쪽은 미리 줄일 곳을 정한다. |
 | mermaid로 그리면 선이 엉키고 글자가 4~5pt로 작아짐 | 이런 문서 그림은 svgdiagram으로 직접 배치한다. |
+| HWPX를 고쳤더니 한글에서 글자가 겹치거나 줄 간격이 이상함 | 고친 문단의 `<hp:linesegarray>`를 지우지 않았음. `hwpx_replace.py`는 바꾼 문단에서 지운다. |
+| 한글 자동화가 연결이나 파일 열기에서 멈춤 | 한글 창에 문서가 열려 있거나 보안 모듈이 등록되지 않았음. `reference/hwp.md`의 '자동화가 멈출 때'를 본다. |
+| 한글에서 작은 표가 쪽 아래로 넘치거나 캡션보다 앞에 놓임 | 표가 떠 있음(글자처럼 취급 해제). '글자처럼 취급'으로 바꾼다. |
