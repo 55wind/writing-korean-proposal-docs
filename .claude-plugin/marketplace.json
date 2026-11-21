@@ -1,0 +1,24 @@
+{
+  "name": "korean-proposal-docs",
+  "id": "korean-proposal-docs",
+  "owner": {
+    "name": "55wind"
+  },
+  "metadata": {
+    "description": "Claude Code skill for Korean submission documents (공모전 기획안, 제안서, 사업계획서) in Word",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "writing-korean-proposal-docs",
+      "source": "./",
+      "description": "Korean proposal documents in Word: tone, tables, Word captions, icon-based architecture and service-flow figures, PDF page checks",
+      "version": "1.0.0",
+      "author": {
+        "name": "55wind"
+      },
+      "keywords": ["korean", "docx", "word", "proposal", "diagram"],
+      "category": "productivity"
+    }
+  ]
+}

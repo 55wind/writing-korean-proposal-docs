@@ -1,0 +1,13 @@
+{
+  "name": "writing-korean-proposal-docs",
+  "description": "Make Korean submission documents (공모전 기획안, 제안서, 사업계획서) in Word with reviewer-friendly rules: tone, tables, Word captions, icon-based architecture and service-flow figures, and PDF page checks.",
+  "version": "1.0.0",
+  "author": {
+    "name": "55wind"
+  },
+  "homepage": "https://github.com/55wind/writing-korean-proposal-docs",
+  "repository": "https://github.com/55wind/writing-korean-proposal-docs",
+  "license": "MIT",
+  "keywords": ["korean", "docx", "word", "proposal", "document", "diagram", "architecture", "python-docx"],
+  "skills": ["./skills/writing-korean-proposal-docs"]
+}

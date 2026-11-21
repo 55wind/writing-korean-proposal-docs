@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+skills/writing-korean-proposal-docs/examples/out/
+.DS_Store
+Thumbs.db
