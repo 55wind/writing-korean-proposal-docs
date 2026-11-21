@@ -187,7 +187,7 @@ Korean contests and government programs often hand out HWP forms. The same rules
 | Situation | Path |
 |---|---|
 | Filling an agency's HWP form, or polishing an HWP file your team has been editing | Convert `.hwp` to `.hwpx`, edit the XML, convert back to `.hwp` |
-| Free format, but the submission must be an HWP file | Build in Word, then convert with `hwp_convert.py` and polish (if automation cannot open the .docx on your Hangul version, open it in Hangul and Save As .hwp) |
+| Free format, but the submission must be an HWP file | Build in Word, open the .docx in Hangul, Save As .hwp and polish (Hancom Office 2018 automation hands .docx to Hanword and hangs) |
 | Text-only fixes (middle dots, em dashes, sentence endings, terminology) | Find with `lint_ko.py`, replace in bulk with `hwpx_replace.py` |
 
 ```bash

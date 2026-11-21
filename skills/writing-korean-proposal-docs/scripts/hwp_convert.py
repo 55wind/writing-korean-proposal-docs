@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """한컴오피스 한글로 문서 형식을 바꾼다 (Windows + 한컴오피스 한글 2018 이상, pywin32 필요).
 
-    python hwp_convert.py 기획안.docx 기획안.hwp       # Word로 만든 문서를 한글 문서로
+    python hwp_convert.py 기획안.docx 기획안.hwp --try-docx   # Word 문서를 한글 문서로 (아래 주의)
     python hwp_convert.py 기획안.hwp  기획안.hwpx      # 글자를 고치려고 HWPX로 (hwpx_replace.py)
     python hwp_convert.py 기획안.hwpx 기획안.hwp
     python hwp_convert.py 기획안.hwp  기획안.pdf       # 제출용 PDF와 쪽수 확인
@@ -15,6 +15,9 @@
   --security-dll 경로, 환경 변수 HWP_SECURITY_DLL, 또는 pip로 설치한 pyhwpx 패키지에 든 DLL 순서로 찾는다.
   보안 모듈은 한컴 개발자 사이트(developer.hancom.com)의 한글 자동화 자료에서 받을 수 있다.
 - 경로에 한글이 들어 있을 때 한글이 말없이 멈추는 경우가 있다. 그러면 영문 경로로 복사해서 바꾼다.
+- .docx, .doc 입력은 --try-docx를 줘야 시도한다. 한컴오피스 2018은 자동화로 docx를 열면 한글 대신 한워드(Hword.exe)를
+  띄우고 열기에 실패하며, 한워드 시작 화면이 화면에 남아 다음 자동화까지 막는다. 그러면 Hword.exe를 끄고,
+  docx는 한글에서 직접 열어 '다른 이름으로 저장'으로 .hwp를 만든다.
 - --timeout 초 안에 끝나지 않으면 멈춘 것으로 보고 종료한다. 이때 남은 숨은 Hwp.exe는 작업 관리자에서 끈다.
 """
 import argparse
@@ -52,9 +55,13 @@ def main():
     ap.add_argument('dst')
     ap.add_argument('--security-dll')
     ap.add_argument('--timeout', type=int, default=180)
+    ap.add_argument('--try-docx', action='store_true', help='docx, doc 입력을 시도함 (한컴오피스 2018은 한워드가 떠서 실패함)')
     a = ap.parse_args()
     src, dst = os.path.abspath(a.src), os.path.abspath(a.dst)
     ein, eout = os.path.splitext(src)[1].lower(), os.path.splitext(dst)[1].lower()
+    if ein in ('.docx', '.doc') and not a.try_docx:
+        raise SystemExit('docx, doc 입력은 한글 버전에 따라 한워드가 떠서 멈출 수 있음. 한글에서 직접 열어 다른 이름으로 '
+                         '저장하거나, 시도하려면 --try-docx를 붙이세요.')
     if eout not in FMT_OUT:
         raise SystemExit('출력 확장자는 %s 중 하나: %s' % (', '.join(FMT_OUT), dst))
 

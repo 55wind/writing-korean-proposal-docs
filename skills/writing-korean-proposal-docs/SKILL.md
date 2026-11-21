@@ -71,7 +71,7 @@ description: Use when making or editing a Korean submission document (공모전 
 위 규칙은 한글 문서에도 그대로 적용한다. 한글에서만 생기는 일과 자세한 방법은 `reference/hwp.md`를 읽는다.
 
 - **양식을 채우거나 기존 한글 문서를 고칠 때**: `hwp_convert.py`로 .hwp를 .hwpx로 바꾸고, XML을 고치거나 `hwpx_replace.py`로 글자를 바꾼 뒤 다시 .hwp로 바꾼다. 원본은 덮어쓰지 않는다.
-- **형식이 자유인데 한글 파일로 내야 할 때**: Word로 만든 뒤 `hwp_convert.py 문서.docx 문서.hwp`로 바꾸고, `reference/hwp.md`의 '바꿀 때 확인할 것'을 확인한다.
+- **형식이 자유인데 한글 파일로 내야 할 때**: Word로 만든 뒤 한글에서 docx를 열어 '다른 이름으로 저장'으로 .hwp를 만들고, `reference/hwp.md`의 '바꿀 때 확인할 것'을 확인한다. 한컴오피스 2018은 자동화로 docx를 열면 한워드(Hword.exe)가 떠서 멈추므로 사용자에게 저장을 부탁한다.
 - **규칙 검사**: `lint_ko.py`는 .hwp, .hwpx를 한글 없이 바로 읽어 문장부호, 특수 공백, 말투, 캡션 형식을 검사한다.
 - 양식이 정한 글꼴, 크기, 줄 간격, 표 칸이 이 문서의 기본값보다 먼저다.
 - 그림은 PNG로 넣는다 (`svg_to_png.py --width 3600`). 작은 표는 '글자처럼 취급'으로 두어 캡션과 함께 움직이게 한다.
@@ -85,7 +85,7 @@ description: Use when making or editing a Korean submission document (공모전 
 4. 문서 만들기: `scripts/docx_helpers.py`를 쓴다. 표는 `table`, `cell(valign='center')`, `fill`, 그림은 `picture_svg`, 캡션은 `caption(doc, '그림' 또는 '표', 제목)`, 목록은 numPr 글머리표다. 완성 예시는 `examples/example_build_docx.py`에 있다.
 5. PDF 내보내기: `python scripts/word_to_pdf.py doc.docx --embed-fonts --pages 10` (Windows와 Microsoft Word 필요)
 6. 점검하기: `python scripts/pdf_check.py doc.pdf`로 쪽수, 남은 여백, 글꼴을 확인하고, `python scripts/lint_ko.py doc.docx`(또는 .hwp, .hwpx, .pdf)로 문장부호, 말투, 캡션 형식을 검사한다.
-7. 한글 파일로 낼 때: `python scripts/hwp_convert.py doc.docx doc.hwp` 뒤 `reference/hwp.md`대로 확인한다.
+7. 한글 파일로 낼 때: 한글에서 docx를 열어 .hwp로 저장한 뒤 `reference/hwp.md`대로 확인하고, `python scripts/hwp_convert.py doc.hwp doc.pdf`로 쪽수를 확인한다.
 
 ## Common Mistakes
 
